@@ -1,23 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/css_basics.css">
 
+  <!-- CSS -->
   <style>
     /* . means class */
     /* # means id */
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 18px;
+      line-height: 1.6em;
+    }
+
+    /* Going into IDs css to style certain tag: span*/
+    #welcome p span {
+      font-weight: bold;
+    }
+
+    #about p span {
+      font-style: italic;
+      font-weight: bold;
+    }
   </style>
 
 
 </head>
-<body>
 
-  <h1>test</h1>
-  <h2></h2>
-  <h3>test</h3>
-  
+<body>
+  <div id="welcome">
+    <h2 class="primary-heading">Welcome</h2>
+    <p>Lorem ipsum dolor sit <span>consectetur adipisicing elit.</span> Nam doloremque, cumque laudantium cum libero est
+      porro explicabo ipsa consequuntur asperiores, sed harum! Laboriosam similique assumenda quo, vitae impedit ipsum
+      magnam.</p>
+  </div>
+
+  <div id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur <span>elit. Suscipit ducimus nulla quos</span> facere iste eius laborum,
+      odio repellendus quasi ex quibusdam error! Dolor aut sequi officiis pariatur quia? Non, saepe!</p>
+  </div>
+
+
 </body>
+
 </html>
