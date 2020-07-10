@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline and Block Styling</title>
+
+  <style>
+    .box {
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+      width: 30%;
+      /* Makes it into block so we can stack them together inline, block inline combo */
+      /* Also allows us to add width */
+      display: inline-block;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<!-- Note #1 -->
+<!-- You cant center an img, for example, using margin:auto on an inline element -->
+<!-- You have to change it to block level by using, display: block -->
+<!-- ex:  -->
+<!-- display: block -->
+<!-- margin: auto-->
+<!-- *this now centers the element you are trying to impose on -->
+
+<body>
+
+  <div class="box">
+    <h2>Heading</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quisquam tenetur laudantium, perspiciatis in
+      ratione doloribus corporis nobis temporibus vero.</p>
+  </div>
+  <div class="box">
+    <h2>Heading</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quisquam tenetur laudantium, perspiciatis in
+      ratione doloribus corporis nobis temporibus vero.</p>
+  </div>
+  <div class="box">
+    <h2>Heading</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quisquam tenetur laudantium, perspiciatis in
+      ratione doloribus corporis nobis temporibus vero.</p>
+  </div>
+</body>
+
+</html>
