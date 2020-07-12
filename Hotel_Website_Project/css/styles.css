@@ -84,6 +84,20 @@ p {
   clear: both;
 }
 
+/* Padding / Utility Class */
+/* Padding Y Axis */
+.py-1 {
+  padding: 10px 0;
+}
+
+.py-2 {
+  padding: 20px 0;
+}
+
+.py-3 {
+  padding: 30px 0;
+}
+
 /* Navbar */
 #navbar {
   background: #333;
@@ -184,6 +198,28 @@ p {
 .box i {
   margin-bottom: 10px;
 }
+
+/* About Info */
+#about-info .info-right {
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img {
+  /* Image displayed is naturally inline so we make it block */
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
 
 /* Footer */
 #main-footer {
