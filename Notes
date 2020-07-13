@@ -1,0 +1,19 @@
+//Responsive Design 
+-Using HTML/CSS makes websites or app layouts adapt to different screen sizes 
+-Necessary to build responsive layouts
+-Should render on any form factor
+-Media Queries - different css styling for different screen sizes 
+-Rem units over px
+-Mobile first method
+-Smart Phones are usually under 500 px width
+
+//Em and Rem
+-Em is a multiplier. Relative to the font size of its parent container
+-Rem is relative to the font size to the root html element
+-ie. html tag is 16px
+- REM is mostly used that Em
+<!-- if know that the font size of html tag is 16px,  -->
+<!-- if we set an element to font-size: 2rem, the fontsize of our selector will be 32px -->
+
+//Vh and Vw Units
+-Theres always 100 VH in the browser body
