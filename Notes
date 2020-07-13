@@ -17,3 +17,17 @@
 
 //Vh and Vw Units
 -Theres always 100 VH in the browser body
+
+
+//Flexbox
+- Modern Layout in CSS3
+- 'Flex' is a value for the display property
+- Replaces floatgs and is much more elegant to work width
+- Aligns items both horizontal (row) and vertical (column)
+- Flex items can be re-ordered via CSS
+- display: flex (creates a flex container)
+-All direct child elements are "flex items"
+
+- justify-content: Align along the main axis (horizontal)
+- align-items: Align items along the cross axis (Vertical)
+- align-content: Align when extra space in cross axis 
