@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      body {
+        background: #333;
+        display: flex;
+        /* aligns y axis */
+        align-items: center;
+        /* aligns x axis */
+        justify-content: center;
+        height: 100vh;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transitions</title>
-  <style>
-    body {
-      background: #333;
-      display: flex;
-      /* aligns y axis */
-      align-items: center;
-      /* aligns x axis */
-      justify-content: center;
-      height: 100vh;
-    }
+      .box {
+        background: white;
+        width: 100px;
+        height: 100px;
+        /* want to add transition to background */
+        transition-property: background;
+        /* transitions in 2s, more smoother */
+        /* transition-duration: 2s; */
+        /* transition-delay: 3s; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition; does all the above */
+        /* transition: background 2s ease-in-out; */
+        transition: all 2s ease-in-out;
+      }
 
-    .box {
-      background: white;
-      width: 100px;
-      height: 100px;
-      /* want to add transition to background */
-      transition-property: background;
-      /* transitions in 2s, more smoother */
-      /* transition-duration: 2s; */
-      /* transition-delay: 3s; */
-      /* transition-timing-function: ease-in-out; */
-      /* transition; does all the above */
-      /* transition: background 2s ease-in-out; */
-      transition: all 2s ease-in-out;
-    }
+      .box:hover {
+        background: red;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
 
-    .box:hover {
-      background: red;
-      border-radius: 50%;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="box">
-
-  </div>
-</body>
-
+  <body>
+    <div class="box"></div>
+  </body>
 </html>
