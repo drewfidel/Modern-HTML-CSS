@@ -17,6 +17,7 @@ body {
 
 .container {
   max-width: 960px;
+  /* centers container horizontally */
   margin: auto;
   overflow: hidden;
   padding: 0 3rem;
