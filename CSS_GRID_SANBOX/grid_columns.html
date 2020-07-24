@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      background: #f4f4f4;
+      padding: 3rem;
+      border: #ccc 1px solid;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      /* Auto streches with view */
+      /* grid-template-columns: 200px auto 200px; */
+      grid-template-columns: repeat(3, auto);
+    }
+
+    main {
+      /* Creating Grid Column  */
+      display: grid;
+      /* 2 fraction size for main and 1 fr for aside */
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+
+  <main>
+    <section>
+      <h3>Welcome to my Site</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas aut adipisci natus quo eaque, amet animi
+        blanditiis architecto nihil quia?</p>
+    </section>
+    <aside>
+      <h3>Hello</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, blanditiis.</p>
+    </aside>
+  </main>
+
+</body>
+
+</html>
