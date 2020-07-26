@@ -41,3 +41,10 @@
 - Browsers dont read SASS, it must be COMPILED 
 - Sass files are compiled to normal CSS files 
 - There are many different types of SASS compilers (CLI, GUI)
+- _variables.css tells scss that we dont want this file to be compiled 
+  - this is a partial
+uses: 
+$ npm install sass
+$ npm init -y
+$ npm run sass
+

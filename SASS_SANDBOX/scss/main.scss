@@ -1,0 +1,78 @@
+@import 'variables';
+@import 'functions';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $light-color;
+  color: $dark-color;
+  font-family: $font-stack;
+  line-height: 1.5;
+}
+
+header {
+  background: $light-color;
+  color: set-text-color($light-color);
+  // color: $light-color;
+  padding: 1rem;
+
+  // Nesting
+  // This h1 only applies to the h1 in header, as
+  // shown in the syntax for scss
+  h1 {
+    text-align: center;
+  }
+}
+
+.section {
+  padding: 3rem;
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  // targets section a elements 
+  &-a {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+  }
+
+  &-b {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+
+a {
+  color: #333;
+
+  &:hover {
+    color: coral
+  }
+}
+
+// Inheritance
+// % to be extended
+%btn-shared {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.btn-light {
+  @extend %btn-shared;
+  background: $light-color;
+  color: set-text-color($light-color);
+}
+
+.btn-dark {
+  @extend %btn-shared;
+  background: $dark-color;
+  color: set-text-color($dark-color);
+}
