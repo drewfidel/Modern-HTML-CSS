@@ -33,4 +33,11 @@
 - align-content: Align when extra space in cross axis 
 
 
-//CSS GRID
+// SASS
+- Syntaticallhy Awesome StyleSheets
+- CSS Preprocessor / Precompiler 
+- Enhances the functionality of CSS
+- Other Preprocessors include LESS and Stylus
+- Browsers dont read SASS, it must be COMPILED 
+- Sass files are compiled to normal CSS files 
+- There are many different types of SASS compilers (CLI, GUI)
